@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Yousuf's Wannabe Website</title>
+        <style>
+            body {
+                background: rgb(148, 148, 148);
+                color: rgb(19, 22, 230);
+                padding: 10px;
+                font-family: arial;
+            }
+            #all-contents {
+                max-width: 800px;
+                margin: auto;
+            }
+        
+            /* navigation menu */
+            nav {
+                background: rgb(20, 158, 20);
+                margin: 0 auto;
+                margin-bottom: 20px;
+                display: flex;
+                padding: 10px;
+            }
+            h1 {
+                display: flex;
+                align-items: center;
+                color: white;
+                flex: 1;
+                margin: 0;
+            }
+            #nav-ul {
+                list-style-image: none;
+            }
+            .nav-li {
+                display: inline-block;
+                padding: 0 10px;
+            }
+            a {
+                text-decoration: none;
+                color: #fff;
+            }
+        
+            /* main container area beneath menu */
+            main {
+                background: rgb(245, 238, 219);
+                display: flex;
+            }
+            .sidebar {
+                margin-right: 25px;
+                padding: 10px;
+            }
+            .sidebar-img {
+                width: 200px;
+            }
+            .content {
+                flex: 1;
+                padding: 15px;
+            }
+            #interests {
+                border: 4px silver ridge;
+                padding: 8px;
+            }
+            h2, h3 {
+                margin: 0px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- All content goes here -->
+        <div id="all-contents">
+            <nav>
+                <h1>YouFish's Wannabe Website</h1>
+                <ul id="nav-ul">
+                    <li class="nav-li">
+                        <a href="index.html"> Home </a>
+                    </li>
+                    <li class="nav-li">
+                        <a href="portfolio.html"> Portfolio </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <main>
+                <!-- Sidebar section -->
+                <div class="sidebar">
+                        <img class="sidebar-img" src="data:image/jpeg;base64,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"
+                </div>
+                <!-- Content section -->
+                <div class="content">
+                 <h2>Yousuf Atteia</h2>   
+                 <p>Student going to Thomas Jefferson</p>
+                 <!-- Interests section -->
+                 <div id="interests">
+                     <h3>Interests</h3>
+                     <ul>
+                         <li>Tetris</li>
+                         <li>Gardening</li>
+                         <li>FPS Video Games</li>
+                     </ul>
+                 </div>
+                </div>
+
+            </main>
+        </div>
+    </body>
+</html>
