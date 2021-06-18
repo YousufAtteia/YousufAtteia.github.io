@@ -52,13 +52,10 @@ circles.push(circle);
         drawCircle();
 
     
-        for (var drawCircle = 0; drawCircle < 100; drawCircle++) {
-            function drawCircle () {
-                circle = draw.randomCircleInArea(canvas, true, true, '#999', 2);
-                physikz.addRandomVelocity(circle, canvas);
-                view.addChild(circle);
-                circles.push(circle);
-        }
+        for (var i = 0; i < 100; i++) {
+            drawCircle();
+        } 
+        
         ////////////////////////////////////////////////////////////
         ///////////////// PROGRAM LOGIC ////////////////////////////
         ////////////////////////////////////////////////////////////
@@ -75,6 +72,9 @@ circles.push(circle);
 	physikz.updatePosition( circles [2] );
 	physikz.updatePosition( circles [3] );
 	physikz.updatePosition( circles [4]);
+
+  
+    }
             
             // TODO 5 / 10 : Call game.checkCirclePosition() on your circles. 
             
@@ -87,7 +87,9 @@ circles.push(circle);
             
            
             // TODO 9 : Iterate over the array
-           
+            for (var i = 0; i < circles.length; i++) {
+                var eachCircle = circles[i];
+                physikz.updatePosition( circles [i] );
             
         }
     
