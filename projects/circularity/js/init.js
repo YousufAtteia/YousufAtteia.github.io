@@ -45,13 +45,20 @@ circles.push(circle);
             view.addChild(circle);
             circles.push(circle);
         }
-        drawCircle ();
-        drawCircle ();
-        drawCircle ();
-        drawCircle ();
-        drawCircle ();
+        drawCircle();
+        drawCircle();
+        drawCircle();
+        drawCircle();
+        drawCircle();
+
     
-        
+        for (var drawCircle = 0; drawCircle < 100; drawCircle++) {
+            function drawCircle () {
+                circle = draw.randomCircleInArea(canvas, true, true, '#999', 2);
+                physikz.addRandomVelocity(circle, canvas);
+                view.addChild(circle);
+                circles.push(circle);
+        }
         ////////////////////////////////////////////////////////////
         ///////////////// PROGRAM LOGIC ////////////////////////////
         ////////////////////////////////////////////////////////////
@@ -103,10 +110,10 @@ circles.push(circle);
             }
 
         if (circle.y<0) {
-            ;
+            circle.y = canvas.height
         }
         if (circle.x <0) {
-
+            circle.x = canvas.width;
         }
 
             // YOUR TODO 7 CODE ENDS HERE //////////////////////////
